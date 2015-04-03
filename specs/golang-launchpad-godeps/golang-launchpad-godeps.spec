@@ -23,7 +23,7 @@ BuildRequires: golang git
 mkdir _build
 pushd _build
 
-mkdir -p src/${dirname %{import_path}}
+mkdir -p src/$(dirname %{import_path})
 ln -s $(dirs +1 -l) src/%{import_path}
 export GOPATH=$(pwd):%{gopath}
 go build -v -a %{import_path}
