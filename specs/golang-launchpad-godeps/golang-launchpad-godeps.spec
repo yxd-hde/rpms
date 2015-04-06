@@ -5,12 +5,12 @@
 
 Summary: A simple command to manage Go package dependencies.
 Name: golang-launchpad-godeps
-Version: r%{rev}
-Release: 1
+Version: 0
+Release: r%{rev}
 License: GNU Affero GPL v3
 URL: https://%{import_path}
 Source0: http://bazaar.launchpad.net/~godeps-maintainers/godeps/trunk/tarball/%{rev}
-BuildRequires: golang git
+BuildRequires: golang git golang-github-kisielk-gotool
 
 %description
 %{summary}
@@ -37,6 +37,10 @@ install -p -m 755 _build/godeps %{buildroot}%{_bindir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
+
+%files
+%defattr(-,root,root,-)
+%{_bindir}/godeps
 
 %changelog
 * Fri Apr  3 2015  YANG Xudong <xudong.yang@hde.co.jp> r27-1
