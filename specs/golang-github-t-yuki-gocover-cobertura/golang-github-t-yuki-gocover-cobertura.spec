@@ -2,7 +2,7 @@
 %global import_path   github.com/t-yuki/gocover-cobertura
 %global gopath        %{_datadir}/gocode
 %global rev           51e121ba753c65cdc969ec7edabf651e2a018832
-%global shortrev      %(r=%{rev}; echo %{r:0:7})
+%global shortrev      %(r=%{rev}; echo ${r:0:7})
 
 Summary: Go tool cover to XML (Cobertura) export tool.
 Name: golang-github-t-yuki-gocover-cobertura
