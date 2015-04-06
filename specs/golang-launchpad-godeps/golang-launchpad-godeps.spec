@@ -5,8 +5,8 @@
 
 Summary: A simple command to manage Go package dependencies.
 Name: golang-launchpad-godeps
-Version: 0
-Release: r%{rev}
+Version: r%{rev}
+Release: 2
 License: GNU Affero GPL v3
 URL: https://%{import_path}
 Source0: http://bazaar.launchpad.net/~godeps-maintainers/godeps/trunk/tarball/%{rev}
