@@ -44,7 +44,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(-,root,root,-)
 %doc LICENSE README.md
-%{_binder}/gocover-cobertura
+%{_bindir}/gocover-cobertura
 
 
 %changelog
