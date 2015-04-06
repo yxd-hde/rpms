@@ -6,8 +6,8 @@
 
 Summary: A library of some of the utility functions provided by (but not exported) by cmd/go
 Name: golang-github-kisielk-gotool
-Version: r%{shortrev}
-Release: 1
+Version: 0
+Release: r%{shortrev}
 License: MIT
 URL: https://%{import_path}
 Source0: https://%{import_path}/tarball/%{shortrev}
@@ -32,6 +32,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(-,root,root,-)
 %doc LEGAL LICENSE README.md
+%{gopath}/*
 
 
 %changelog
