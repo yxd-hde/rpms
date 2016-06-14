@@ -17,7 +17,7 @@ BuildRequires: golang git golang-github-kisielk-gotool
 %{summary}
 
 %prep
-%setup -n godeps-%{shortrev}
+%setup -n rogpeppe-godeps-%{shortrev}
 
 %build
 
