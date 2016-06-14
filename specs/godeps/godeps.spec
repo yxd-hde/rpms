@@ -1,13 +1,12 @@
 %global debug_package %{nil}
 %global import_path   github.com/rogpeppe/godeps
 %global gopath        %{_datadir}/gocode
-%global rev           920c445a860bc02422a9029f6b1cb08ba5adb8c6
-%global shortrev      %(r=%{rev}; echo ${r:0:7})
+%global shortrev      920c445
 
 Summary: A simple command to manage Go package dependencies.
 Name: godeps
 Version: r%{shortrev}
-Release: 2
+Release: 1
 License: GNU Affero GPL v3
 URL: https://%{import_path}
 Source0: https://%{import_path}/tarball/%{shortrev}
@@ -44,5 +43,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/godeps
 
 %changelog
-* Fri Jun 14 2016 YANG Xudong <xudong.yang@hde.co.jp> r920c445-1
+* Tue Jun 14 2016 YANG Xudong <xudong.yang@hde.co.jp> r920c445-1
 - Initial build.
