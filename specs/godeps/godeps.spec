@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 %global import_path   github.com/rogpeppe/godeps
 %global gopath        %{_datadir}/gocode
-%global shortrev      920c445
+%global shortrev      c00f01a
 
 Summary: A simple command to manage Go package dependencies.
 Name: godeps
@@ -43,5 +43,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/godeps
 
 %changelog
+* Wed Sep 14 2016 YANG Xudong <xudong.yang@hde.co.jp> rc00f01a-1
+- Upgrade to latest commit.
+
 * Tue Jun 14 2016 YANG Xudong <xudong.yang@hde.co.jp> r920c445-1
 - Initial build.
